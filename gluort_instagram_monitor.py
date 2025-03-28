@@ -54,8 +54,7 @@ if st.button("🔍 지금 크롤링 실행하기"):
         today = datetime.now().strftime('%Y.%m.%d')
         body = f"[글루어트 인스타 리포트] {today}\n\n"
         for r in results:
-            body += f"- {r['caption']}\n{r['link']}\n
-"
+            body += f"- {r['caption']}\n{r['link']}\n"
 
         subject = f"[글루어트] {today} 인스타 키워드 리포트"
 
